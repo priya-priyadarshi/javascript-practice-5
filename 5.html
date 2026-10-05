@@ -1,0 +1,50 @@
+<script>
+
+function fight() {
+
+    console.log(`${this.name} is fighting ${this.villain} with ${this.power} power!`);
+
+}
+
+function isAlive() {
+
+    if(this.health > 50) {
+        console.log("Alive!");
+    }
+    else {
+        console.log("Defeated!");
+    }
+
+}
+
+const hero1 = {
+    name: "Spiderman",
+    power: "Web Slinging",
+    health: 80,
+    villain: "Green Goblin",
+    fight: fight,
+    isAlive: isAlive
+}
+
+const hero2 = {
+    name: "Batman",
+    power: "Martial Arts",
+    health: 40,
+    villain: "Joker",
+    fight: fight,
+    isAlive: isAlive
+}
+
+const hero3 = {
+    name: "Superman",
+    power: "Super Strength",
+    health: 90,
+    villain: "Lex Luthor",
+    fight: fight,
+    isAlive: isAlive
+}
+
+hero1.fight();
+hero1.isAlive();
+
+</script>

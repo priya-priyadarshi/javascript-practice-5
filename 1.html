@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>smartphones</title>
+</head>
+<body>
+    <script>
+        function getSpecs() {
+            console.log(`${this.brand} — Battery: ${this.battery}, Camera:${this.camera}`);
+        }
+        const phone1 ={
+            brand:"Apple",
+            model:"iphone 15",
+            battery:"4000mAh",
+            camera:"48mp",
+            getSpecs:getSpecs
+        }
+        const phone2 ={
+            brand:"oneplus",
+            model:"oneplus nore c2 lite",
+            battery:"5000mAh",
+            camera:"50mp",
+            getSpecs:getSpecs
+        }
+        const phone3 ={
+            brand:"vivo",
+            model:"vivi y19",
+            battery:"5000mAh",
+            camera:"48mp",
+            getSpecs:getSpecs
+        }
+        phone1.getSpecs();
+        phone2.getSpecs();
+        phone3.getSpecs();
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+<script>
+
+function getSummary() {
+
+    console.log(`${this.title} by ${this.director} | Rating: ${this.rating} | Cast: ${this.cast.join(", ")}`);
+
+}
+
+const movie1 = {
+    title: "Inception",
+    director: "Christopher Nolan",
+    rating: 9.3,
+    genre: "Sci-Fi",
+    cast: ["DiCaprio", "Gordon", "Page"],
+    getSummary: getSummary
+}
+
+const movie2 = {
+    title: "Interstellar",
+    director: "Christopher Nolan",
+    rating: 9.0,
+    genre: "Sci-Fi",
+    cast: ["McConaughey", "Hathaway", "Chastain"],
+    getSummary: getSummary
+}
+
+const movie3 = {
+    title: "Avatar",
+    director: "James Cameron",
+    rating: 8.5,
+    genre: "Fantasy",
+    cast: ["Sam", "Zoe", "Sigourney"],
+    getSummary: getSummary
+}
+
+movie1.getSummary();
+
+</script>

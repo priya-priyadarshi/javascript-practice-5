@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Restaurant</title>
+</head>
+<body>
+
+<script>
+
+function getInfo() {
+
+    console.log(`${this.name} serves ${this.foodType} with ${this.rating} stars`);
+
+}
+
+const res1 = {
+    name: "Burger King",
+    foodType: "Fast Food",
+    rating: 4.5,
+    getInfo: getInfo
+}
+
+const res2 = {
+    name: "Sagar Gaire",
+    foodType: "Fast Food",
+    rating: 4.2,
+    getInfo: getInfo
+}
+
+const res3 = {
+    name: "KFC",
+    foodType: "Fast Food",
+    rating: 5,
+    getInfo: getInfo
+}
+
+res1.getInfo();
+res2.getInfo();
+res3.getInfo();
+
+</script>
+
+</body>
+</html>

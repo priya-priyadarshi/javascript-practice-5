@@ -1,0 +1,30 @@
+<script>
+
+function getDetails() {
+    console.log(`${this.title} by ${this.author} costs ₹${this.price}`);
+}
+
+const book1 = {
+    title: "Atomic Habits",
+    author: "James Clear",
+    price: 499,
+    getDetails: getDetails
+}
+
+const book2 = {
+    title: "Rich Dad Poor Dad",
+    author: "Robert Kiyosaki",
+    price: 399,
+    getDetails: getDetails
+}
+
+const book3 = {
+    title: "Think and Grow Rich",
+    author: "Napoleon Hill",
+    price: 299,
+    getDetails: getDetails
+}
+
+book1.getDetails();
+
+</script>
